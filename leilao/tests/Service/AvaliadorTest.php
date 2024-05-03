@@ -67,7 +67,7 @@ class AvaliadorTest extends TestCase
     $leilao->recebeLance(new Lance($joao, 2000));
     $leilao->recebeLance(new Lance($maria, 2500));
 
-    return [[$leilao]];
+    return ["ordem-crescente" => [$leilao]];
   }
 
   /* ---------Dados--------- */
@@ -83,7 +83,7 @@ class AvaliadorTest extends TestCase
     $leilao->recebeLance(new Lance($joao, 2000));
     $leilao->recebeLance(new Lance($ana, 1700));
 
-    return [[$leilao]];
+    return ["ordem-decrescente" => [$leilao]];
   }
 
   public static function leilaoEmOrdemAleatoria()
@@ -98,7 +98,7 @@ class AvaliadorTest extends TestCase
     $leilao->recebeLance(new Lance($maria, 2500));
     $leilao->recebeLance(new Lance($ana, 1700));
 
-    return [[$leilao]];
+    return ["ordem-aleatoria" => [$leilao]];
   }
 
   public static function entregaLeiloes()
@@ -112,8 +112,8 @@ class AvaliadorTest extends TestCase
 }
 
 /*
-public static function setUpBeforeClass(): void - Método executado uma vez só, antes de todos os testes da classe
-protected function setUp(): void - Método executado antes de cada teste da classe
-protected function tearDown(): void - Método executado após cada teste da classe
-public static function tearDownAfterClass(): void - Método executado uma vez só, após todos os testes da classe
+-public static function setUpBeforeClass(): void - Método executado uma vez só, antes de todos os testes da classe
+-protected function setUp(): void - Método executado antes de cada teste da classe
+-protected function tearDown(): void - Método executado após cada teste da classe
+-public static function tearDownAfterClass(): void - Método executado uma vez só, após todos os testes da classe
 */
