@@ -1,6 +1,6 @@
-# php_26_symfony_05
+# php_27_tdd_phpunit
 
-Projeto do curso "Symfony Framework: lidando com eventos, tradução, logs e deploy" da Alura
+Projeto do curso "PHP e TDD: testes com PHPUnit" da Alura
 
 ## Links
 
